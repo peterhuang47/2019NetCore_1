@@ -21,4 +21,20 @@ namespace NUnitTestProject1
             Assert.Fail("Test 'Fail Test'");
         }
     }
+    public class MyTests
+    {
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
+        public void Test1()
+        {
+            ILogger<IndexModel> _logger = null;
+            IndexModel indexModel = new IndexModel(_logger);
+            indexModel.OnGet();
+            Assert.Fail("MyTests 'Fail Test'");
+        }
+    }
 }
