@@ -18,7 +18,7 @@ namespace NUnitTestProject1
             ILogger<IndexModel> _logger = null;
             IndexModel indexModel = new IndexModel(_logger);
             indexModel.OnGet();
-            Assert.Pass();
+            Assert.Fail("Test 'Fail Test'");
         }
     }
 }
