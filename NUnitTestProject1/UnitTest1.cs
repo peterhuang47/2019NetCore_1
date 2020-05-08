@@ -15,6 +15,7 @@ namespace NUnitTestProject1
         [Test]
         public void Test1()
         {
+            throw new System.Exception("NUnitTestProject1.Tests.Test1");
             ILogger<IndexModel> _logger = null;
             IndexModel indexModel = new IndexModel(_logger);
             indexModel.OnGet();
@@ -31,6 +32,7 @@ namespace NUnitTestProject1
         [Test]
         public void Test1()
         {
+            throw new System.Exception("NUnitTestProject1.MyTests.Test1");
             ILogger<IndexModel> _logger = null;
             IndexModel indexModel = new IndexModel(_logger);
             indexModel.OnGet();
