@@ -29,8 +29,8 @@ namespace WebApplication1.Pages
 
             string secretName = "ManualMySecretName1";
 
-            string keyVaultName = Environment.GetEnvironmentVariable("KEY_VAULT_NAME");
-            keyVaultName = "webappkeyvaulttest1";
+            //string keyVaultName = Environment.GetEnvironmentVariable("KEY_VAULT_NAME");
+            string keyVaultName = "webappkeyvaulttest1";
             var kvUri = "https://" + keyVaultName + ".vault.azure.net";
 
             var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
