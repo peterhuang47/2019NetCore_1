@@ -25,7 +25,7 @@ namespace NUnitTestProject1
             var logger = factory.CreateLogger<IndexModel>();
 
             IndexModel indexModel = new IndexModel(logger);
-            indexModel.OnGet();
+            //indexModel.OnGet();
             Assert.Pass("MyTests 'Fail Test'");
             //Assert.Fail("MyTests 'Fail Test'");
         }
@@ -49,7 +49,7 @@ namespace NUnitTestProject1
             var logger = factory.CreateLogger<IndexModel>();
              
             IndexModel indexModel = new IndexModel(logger);
-            indexModel.OnGet();
+            //indexModel.OnGet();
             Assert.Pass("MyTests 'Fail Test'");
             //Assert.Fail("MyTests 'Fail Test'");
         }
@@ -65,7 +65,7 @@ namespace NUnitTestProject1
             var logger = factory.CreateLogger<ErrorModel>();
 
             ErrorModel indexModel = new ErrorModel(logger);
-            indexModel.OnGet();
+            //indexModel.OnGet();
             Assert.Pass("MyTests 'Fail Test'");
             //Assert.Fail("MyTests 'Fail Test'");
         }

@@ -23,7 +23,7 @@ namespace WebApplication1.Pages.Tests
             var logger = factory.CreateLogger<IndexModel>();
 
             IndexModel indexModel = new IndexModel(logger);
-            indexModel.OnGet();
+            //indexModel.OnGet();
             //Assert.Fail("MyTests 'Fail Test'"); 
         }
         [TestMethod()]
@@ -38,7 +38,7 @@ namespace WebApplication1.Pages.Tests
             var logger = factory.CreateLogger<ErrorModel>();
 
             ErrorModel indexModel = new ErrorModel(logger);
-            indexModel.OnGet();
+            //indexModel.OnGet();
             //Assert.Fail("MyTests 'Fail Test'"); 
         }
     }
