@@ -25,6 +25,10 @@ namespace WebApplication1.Pages
 
         public void OnGet()
         {
+            System.Diagnostics.Trace.TraceInformation("-------TraceInformation");
+            System.Diagnostics.Trace.TraceError("------TraceError");
+            System.Diagnostics.Trace.WriteLine("------WriteLine");
+            System.Diagnostics.Trace.TraceWarning("------TraceWarning");
             Console.WriteLine("Hello World!");
 
             string secretName = "ManualMySecretName1";
@@ -33,7 +37,7 @@ namespace WebApplication1.Pages
             string keyVaultName = "webappkeyvaulttest1";
             var kvUri = "https://" + keyVaultName + ".vault.azure.net";
 
-            var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
+            var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential( ));
               
             Console.WriteLine("Retrieving your secret from " + keyVaultName + ".");
 
